@@ -1,0 +1,8 @@
+services:
+  - name: techTutor
+    type: web
+    runtime: dotnet
+    branch: main
+    buildCommand: dotnet publish -c Release -o out
+    startCommand: dotnet out/TechTutorBackend.dll
+    plan: free
